@@ -114,7 +114,7 @@ height: 104px;
 /* ------------
 Media Queries 
 --------------- */
-/* top players */
+/*Mobile */
 
 @media screen and (max-width:576px) {
   .container-1, .container-2{
@@ -127,5 +127,16 @@ Media Queries
   }
   .player, .blog, .course{
     flex-direction: column;
+  }
+}
+/* Tablet */
+@media only screen and (min-width:577px) and (max-width:992px) {
+  .container-1, .container-2{
+    height:100%;
+    width: 100%;
+  }
+  .players, .courses{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 }
